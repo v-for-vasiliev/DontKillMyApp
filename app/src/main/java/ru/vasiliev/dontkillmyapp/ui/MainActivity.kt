@@ -1,8 +1,9 @@
-package ru.vasiliev.dontkillmyapp
+package ru.vasiliev.dontkillmyapp.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import ru.vasiliev.dontkillmyapp.ui.main.MainFragment
+import androidx.appcompat.app.AppCompatActivity
+import ru.vasiliev.dontkillmyapp.R
+import ru.vasiliev.dontkillmyapp.ui.vendorhack.VendorHackFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow()
+                .replace(R.id.container, VendorHackFragment.newInstance())
+                .commitNow()
         }
     }
 }
