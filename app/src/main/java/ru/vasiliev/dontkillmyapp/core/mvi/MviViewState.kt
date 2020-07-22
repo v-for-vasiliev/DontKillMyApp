@@ -1,3 +1,3 @@
-package ru.vasiliev.architecturesandbox.core.mvi
+package ru.vasiliev.dontkillmyapp.core.mvi
 
 interface MviViewState

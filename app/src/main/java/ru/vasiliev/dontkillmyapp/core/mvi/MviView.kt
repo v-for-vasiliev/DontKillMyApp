@@ -1,4 +1,4 @@
-package ru.vasiliev.architecturesandbox.core.mvi
+package ru.vasiliev.dontkillmyapp.core.mvi
 
 import io.reactivex.rxjava3.core.Observable
 
