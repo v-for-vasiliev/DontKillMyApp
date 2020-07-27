@@ -1,4 +1,4 @@
-package ru.vasiliev.dontkillmyapp.ui.vendorhack
+package ru.vasiliev.dontkillmyapp.ui.vendorhacks
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -8,13 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import ru.vasiliev.dontkillmyapp.R
 
-class VendorHackFragment : Fragment() {
+class VendorHacksFragment : Fragment() {
 
     companion object {
-        fun newInstance() = VendorHackFragment()
+        fun newInstance() = VendorHacksFragment()
     }
 
-    private lateinit var viewModel: VendorHackViewModel
+    private lateinit var viewModel: VendorHacksViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -23,7 +23,7 @@ class VendorHackFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(VendorHackViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(VendorHacksViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

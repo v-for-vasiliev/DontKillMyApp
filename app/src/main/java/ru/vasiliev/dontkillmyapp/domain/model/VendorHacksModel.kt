@@ -1,6 +1,6 @@
-package ru.vasiliev.dontkillmyapp.data.entity
+package ru.vasiliev.dontkillmyapp.domain.model
 
-data class VendorHackEntity(
+data class VendorHacksModel(
     val award: Int,
     val developer_solution: String,
     val explanation: String,

@@ -6,5 +6,5 @@ import ru.vasiliev.dontkillmyapp.di.scope.VendorHackScope
 
 @VendorHackScope
 @Subcomponent(modules = [RepositoryModule::class])
-interface VendorHackComponent {
+interface VendorHacksComponent {
 }
