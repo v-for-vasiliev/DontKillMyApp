@@ -1,6 +1,6 @@
 package ru.vasiliev.dontkillmyapp.ui.vendorhacks.mvi
 
-import ru.vasiliev.dontkillmyapp.core.mvi.MviResult
+import ru.vasiliev.dontkillmyapp.mvi.MviResult
 import ru.vasiliev.dontkillmyapp.domain.model.VendorHacksModel
 
 sealed class VendorHacksResult : MviResult {

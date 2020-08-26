@@ -1,4 +1,4 @@
-package ru.vasiliev.dontkillmyapp.data.util
+package ru.vasiliev.dontkillmyapp.util
 
 import io.reactivex.rxjava3.core.Scheduler
 

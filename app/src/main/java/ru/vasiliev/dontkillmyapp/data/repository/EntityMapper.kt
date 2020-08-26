@@ -1,4 +1,4 @@
-package ru.vasiliev.dontkillmyapp.data.util
+package ru.vasiliev.dontkillmyapp.data.repository
 
 import ru.vasiliev.dontkillmyapp.data.entity.VendorHacksEntity
 import ru.vasiliev.dontkillmyapp.domain.model.VendorHacksModel

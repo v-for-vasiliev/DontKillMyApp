@@ -1,6 +1,6 @@
 package ru.vasiliev.dontkillmyapp.ui.vendorhacks.mvi
 
-import ru.vasiliev.dontkillmyapp.core.mvi.MviIntent
+import ru.vasiliev.dontkillmyapp.mvi.MviIntent
 
 sealed class VendorHacksIntent : MviIntent {
     object LoadAllVendorHacksIntent : VendorHacksIntent()

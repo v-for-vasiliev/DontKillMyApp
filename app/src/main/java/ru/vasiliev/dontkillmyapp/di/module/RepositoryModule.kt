@@ -1,16 +1,20 @@
 package ru.vasiliev.dontkillmyapp.di.module
 
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
-import ru.vasiliev.dontkillmyapp.data.datasource.DontKillMyAppApi
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.components.SingletonComponent
 import ru.vasiliev.dontkillmyapp.data.repository.VendorHacksRepositoryImpl
 import ru.vasiliev.dontkillmyapp.domain.repository.VendorHacksRepository
 import javax.inject.Singleton
 
+@InstallIn(SingletonComponent::class)
 @Module
-class RepositoryModule {
+abstract class RepositoryModule {
     @Singleton
-    @Provides
-    fun provideVendorHackRepository(api: DontKillMyAppApi): VendorHacksRepository =
-        VendorHacksRepositoryImpl(api)
+    @Binds
+    abstract fun bindVendorHackRepository(
+        vendorHacksRepository: VendorHacksRepositoryImpl
+    ): VendorHacksRepository
 }
